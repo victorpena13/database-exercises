@@ -1,9 +1,10 @@
 use codeup_test_db;
 DROP TABLE IF EXISTS albums;
-CREATE TABLE quotes (
+CREATE TABLE albums (
     id INT UNSIGNED NOT NULL AUTO_INCREMENT,
-    author_first_name VARCHAR(50) DEFAULT 'NONE',
-    author_last_name  VARCHAR(100) NOT NULL,
-    content TEXT NOT NULL,
+    artist VARCHAR(50) DEFAULT 'UNKNOWN',
+    track VARCHAR(100) DEFAULT 'UNTITLED',
+    genre VARCHAR(50) DEFAULT 'VARIOUS',
+    sales int,
     PRIMARY KEY (id)
 );
