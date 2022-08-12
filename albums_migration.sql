@@ -6,6 +6,6 @@ CREATE TABLE albums (
     track VARCHAR(100) DEFAULT 'UNTITLED',
     genre VARCHAR(50) DEFAULT 'VARIOUS',
     sales int,
-    release_date date,
+    release_date VARCHAR(50),
     PRIMARY KEY (id)
 );
