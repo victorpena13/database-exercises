@@ -15,4 +15,5 @@ VALUES ('Kate Bush', 'running up that hill', 'alternative', 31, '08-05-85'),
        ('The Muffs', 'Kid''s of America', 'punk', sales , '1995');
 
 SELECT 'Kate Bush', 'running up that hill' from albums;
+SELECT * from albums;
 
