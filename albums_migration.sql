@@ -12,4 +12,7 @@ CREATE TABLE albums (
 
 INSERT INTO albums(artist, track, genre, sales, release_date)
 VALUES ('Kate Bush', 'running up that hill', 'alternative', 31, '08-05-85'),
-       ('The Muffs', 'Kids of America', 'punk', sales , '1995');
+       ('The Muffs', 'Kid''s of America', 'punk', sales , '1995');
+
+SELECT 'Kate Bush', 'running up that hill' from albums;
+
