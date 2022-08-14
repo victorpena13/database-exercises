@@ -12,7 +12,7 @@ CREATE TABLE albums (
 
 INSERT INTO albums(artist, track, genre, sales, release_date)
 VALUES ('Kate Bush', 'running up that hill', '80''s', 31, 1985),
-       ('The Muffs', 'Kid''s of America', 'punk', sales , 1995),
+       ('The Muffs', 'Kid''s of America', 'punk', 20 , 1995),
        ('Lana Del Rey', 'chemtrail''s over the country club', 'dream pop', sales, 2021),
        (artist, 'you''re not who you were', genre, sales, 2021),
         ('Lana Del Rey', 'get free', 'dream pop', sales, 2017);
@@ -28,6 +28,5 @@ SELECT track FROM ALBUMS WHERE id = 4;
 update albums
 set artist = 'Pell'
 where id = 4;
-
-delete from albums where id = 2;
+delete from albums where id = 3;
 
