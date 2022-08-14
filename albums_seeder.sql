@@ -6,16 +6,16 @@ CREATE TABLE albums (
     track VARCHAR(100) DEFAULT 'UNTITLED',
     genre VARCHAR(50) DEFAULT 'VARIOUS',
     sales varchar(50) DEFAULT 'UNKNOWN',
-    release_date VARCHAR(50),
+    release_date int,
     PRIMARY KEY (id)
 );
 
 INSERT INTO albums(artist, track, genre, sales, release_date)
-VALUES ('Kate Bush', 'running up that hill', '80''s', 31, '08-05-85'),
-       ('The Muffs', 'Kid''s of America', 'punk', sales , '1995'),
-       ('Lana Del Rey', 'chemtrail''s over the country club', 'dream pop', sales, release_date),
-       (artist, 'you''re not who you were', genre, sales, release_date),
-        ('Lana Del Rey', 'get free', 'dream pop', sales, release_date);
+VALUES ('Kate Bush', 'running up that hill', '80''s', 31, 1985),
+       ('The Muffs', 'Kid''s of America', 'punk', sales , 1995),
+       ('Lana Del Rey', 'chemtrail''s over the country club', 'dream pop', sales, 2021),
+       (artist, 'you''re not who you were', genre, sales, 2021),
+        ('Lana Del Rey', 'get free', 'dream pop', sales, 2017);
 
 
 
