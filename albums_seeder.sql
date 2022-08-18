@@ -15,7 +15,10 @@ VALUES ('Kate Bush', 'running up that hill', '80''s', 31, 1985),
        ('The Muffs', 'Kid''s of America', 'punk', 20 , 1995),
        ('Lana Del Rey', 'chemtrail''s over the country club', 'dream pop', sales, 2021),
        (artist, 'you''re not who you were', genre, sales, 2021),
-        ('Lana Del Rey', 'get free', 'dream pop', sales, 2017);
+        ('Lana Del Rey', 'get free', 'dream pop', sales, 2017),
+        ('Pink Floyd', 'time', 'rock', sales, 1973),
+        ('Pink Floyd', 'another brick in the wall', 'rock', sales, '1979'),
+        ('Pink Floyd', 'us and them', 'rock', sales, 1973);
 
 
 
