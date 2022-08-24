@@ -1,5 +1,6 @@
 use codeup_test_db;
 
+drop table if exists albums;
 select * from albums;
 select * from albums where artist = 'Lana Del Rey';
 select * from albums where release_date < 2000;
