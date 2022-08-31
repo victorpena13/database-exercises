@@ -30,6 +30,30 @@ select emp_no, title
 from titles
 where to_date is null;
 
+# chaining where clauses
+select emp_no, first_name, last_name
+from employees
+where last_name in  ('Herber', 'Baek')
+and emp_no < 2000;
+
+select emp_no, first_name, last_name
+from employees
+where emp_no < 20000
+    and last_name IN ('Herber', 'Baek')
+    or first_name = 'Shridhar';
+
+# force evaluation grouping:
+select emp_no, first_name, last_name
+from employees
+where emp_no < 20000
+    and (
+        last_name in ('herber', 'baek')
+    or first_name = 'Shridhar'
+    );
+
+
+
+
 
 
 
