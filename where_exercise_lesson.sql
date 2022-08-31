@@ -14,5 +14,14 @@ select emp_no, first_name, last_name
 from employees
 where last_name in ('Herber', 'Dredge', 'Lipner', 'Baek');
 
+select emp_no, first_name, last_name
+from employees
+where last_name = 'Baek';
+
+select emp_no, first_name, last_name
+from employees
+where emp_no <= 10026;
+
+
 
 
