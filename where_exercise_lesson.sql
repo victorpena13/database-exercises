@@ -22,6 +22,16 @@ select emp_no, first_name, last_name
 from employees
 where emp_no <= 10026;
 
+select emp_no, title
+from titles
+where to_date is not null;
+
+select emp_no, title
+from titles
+where to_date is null;
+
+
+
 
 
 
