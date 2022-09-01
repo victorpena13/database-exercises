@@ -17,4 +17,4 @@ order by last_name asc;
 
 select first_name, last_name
 from employees
-order by last_name desc, first_name asc;
+order by first_name, first_name asc;
