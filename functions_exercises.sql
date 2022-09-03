@@ -25,9 +25,12 @@ from employees
 where last_name like '%q%'
   and last_name not like '%qu%';
 
-select concat(first_name, ' ', last_name, ' - ', birth_date)
+select concat('name: ',first_name, ' ', last_name, ' dob: ' , birth_date,' hired  ',datediff(now(), hire_date), ' days ago')
 from employees
 where year(hire_date) between 1990 and 1999
     and month(birth_date) = 12
     and day(birth_date) = 25
     order by year(hire_date)desc;
+
+
+
