@@ -29,4 +29,5 @@ select concat(first_name, ' ', last_name, ' - ', birth_date)
 from employees
 where year(hire_date) between 1990 and 1999
     and month(birth_date) = 12
-    and day(birth_date) = 25;
+    and day(birth_date) = 25
+    order by year(hire_date)desc;
