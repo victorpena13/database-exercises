@@ -26,3 +26,9 @@ select count(first_name)
 from employees
 where first_name not like '%a%';
 
+# using group by with aggregate functions
+
+select first_name, count(first_name)
+from employees
+where first_name not like'%a%'
+group by first_name;
