@@ -20,6 +20,11 @@ where last_name like '%Q%'
     and last_name not like 'QU%'
     group by last_name;
 
+select gender, count(*)
+from employees
+where first_name in ('Irena', 'Vidya', 'Maya')
+group by first_name;
+
 
 
 
