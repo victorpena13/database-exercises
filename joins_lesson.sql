@@ -34,3 +34,10 @@ insert into users(name, email, role_id) values
 select users.name as user_name, roles.name as role_name
 from users
 join roles on users.role_id = roles.id;
+
+#left join - is used when you want to retrieve all the records from the left table, regardless of whether or not they have a corresponding record in the right table.
+
+select users.name as user_name, roles.name as role_name
+from users
+left join roles on users.role_id = roles.id;
+#now all users will be displayed.
