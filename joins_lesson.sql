@@ -1,6 +1,7 @@
 create database if not exists join_test_db;
 use join_test_db;
 
+
 create table roles (
     id int unsigned not null auto_increment,
     name varchar(100) not null,
@@ -28,3 +29,8 @@ insert into users (name, email, role_id) values
 ('adam', 'adam@example.com', 3),
 ('jane', 'jane@example.com', null),
 ('mike', 'mike@example.com', null);
+
+#join/inner join:
+select users.name as user_name, roles.name as role_name
+from users
+join roles on users.role_id = roles.id;
