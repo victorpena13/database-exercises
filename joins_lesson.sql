@@ -16,3 +16,15 @@ create table users (
     foreign key (role_id) references roles (id)
 );
 
+insert into roles (name) values ('admin');
+insert into roles (name) values ('author');
+insert into roles (name) values ('reviewer');
+insert into roles (name) values ('commenter');
+
+insert into users (name, email, role_id) values
+('bob', 'bob@example.com', 1),
+('joe', 'joe@example.com', 2),
+('sally', 'sally@example.com', 3),
+('adam', 'adam@example.com', 3),
+('jane', 'jane@example.com', null),
+('mike', 'mike@example.com', null);
