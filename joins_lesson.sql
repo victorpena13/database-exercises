@@ -40,4 +40,18 @@ select users.name as user_name, roles.name as role_name
 from users
 left join roles on users.role_id = roles.id;
 
+#right join:
+select users.name as user_name, roles.name as role_name
+from users
+right join roles on users.role_id = roles.id;
+
+#right join query rewritten as left join
+
+select users.name as user_name, roles.name as role_name
+from roles
+left join users on users.role_id = roles.id;
+
+
+
+
 
